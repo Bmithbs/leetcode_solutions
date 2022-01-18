@@ -17,12 +17,13 @@ def search(nums, target):
         else:
             return mid
 
-    if nums[left] == nums[right] == target: return left
-    else: return -1
+    # if nums[left] == nums[right] == target: return left
+    # else:
+    return -1
 
 if __name__ == "__main__":
     nums = [-1,0,3,5,9,12]
-    target = 9
+    target = 10
     x = search(nums, target)
     print(x)
 
