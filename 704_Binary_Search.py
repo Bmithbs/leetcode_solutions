@@ -8,7 +8,7 @@ def search(nums, target):
     length = len(nums)
     left = 0
     right = length - 1
-    while left < right:
+    while left <= right:
         mid = (left + right) // 2
         if target > nums[mid]:
             left = mid + 1
@@ -23,7 +23,7 @@ def search(nums, target):
 
 if __name__ == "__main__":
     nums = [-1,0,3,5,9,12]
-    target = 10
+    target = 9
     x = search(nums, target)
     print(x)
 
